@@ -32,4 +32,4 @@ with gr.Blocks() as app:
 
     btn.click(run_task, inputs=difficulty, outputs=[out1, out2, out3, out4])
 
-app.launch(server_name="0.0.0.0", server_port=7860, share=True)
+app.launch()
