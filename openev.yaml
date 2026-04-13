@@ -1,0 +1,23 @@
+name: support-routing-env
+version: 1.0
+
+observation_space:
+  text: string
+
+action_space:
+  department: string
+  priority: string
+
+tasks:
+  - difficulty: easy
+  - difficulty: medium
+  - difficulty: hard
+
+reward:
+  type: partial
+  range: [0.0, 1.0]
+
+api:
+  reset: returns initial state
+  step: takes action, returns reward and done
+  state: returns current state
