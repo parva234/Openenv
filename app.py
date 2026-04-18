@@ -31,5 +31,5 @@ with gr.Blocks() as app:
     out4 = gr.Number(label="Reward")
 
     btn.click(run_task, inputs=difficulty, outputs=[out1, out2, out3, out4])
-
+   
 app.launch()
